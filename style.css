@@ -1,4 +1,4 @@
-/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
+/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
 body {
@@ -8,20 +8,30 @@ body {
   padding: 40px;
 }
 
-/* Set the font family for any h1, h2, or h3 heading */
-h1 {
-  font-family: "Playfair Display", Times, serif;
-  font-size: 42px;
-  text-align: center;
-}
-h2 {
-  font-family: "Playfair Display", Times, serif;
-  font-size: 32px;
-  text-align: center;
-}
+/* Headings */
+h1,
+h2,
 h3 {
   font-family: "Playfair Display", Times, serif;
   text-align: center;
+}
+
+/* Header */
+header {
+  text-align: center;
+}
+
+.h-container{ 
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Containers */
+div {
+  background-color: #eae2b7;
+  margin: auto;
+  width: 600px;
 }
 
 article {
@@ -33,48 +43,68 @@ article div {
   width: 100%;
 }
 
+.a-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  flex-wrap: wrap;
+}
+
+.p-container{
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+p, .p-container{
+  font-size: 14px;
+}
+
+/* Paragraphs */
 p {
   line-height: 1.5;
+  font-size: 14px;
 }
 
-/* The div container constrains the content width within the main container to 600px */
-div {
-  margin: auto;
-  width: 600px;
-}
-
-img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-}
-
-hr {
-  border: 1px solid black;
-}
-
-/* Add your solution below */
-
-.image-circle {
-  color: #003049;
-  border: 2px;
-border-radius: 50%;
-}
-
-header {
-  margin: 1rem;
-  text-align: center;
-}
-
-header h1 {
-  margin: 1rem auto;
-  text-align: center;
-}
-
-a {
+/* Links */
+a:link {
   color: #d62828;
 }
 
 a:hover {
   color: #f77f00;
+}
+
+nav a {
+  padding-left: 20px;
+}
+
+/* Images */
+img {
+  width: 100%;
+  max-width: 200px;
+  height: 250px;
+
+}
+
+.image-circle {
+  border: 2px solid #003049;
+  border-radius: 75%;
+  display: flex;
+  height: auto;
+  width: auto;
+  justify-items: left;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+
+/* Other page elements */
+hr {
+  border: 1px solid black;
 }
