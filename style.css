@@ -21,12 +21,6 @@ header {
   text-align: center;
 }
 
-.h-container{ 
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
 /* Containers */
 div {
   background-color: #eae2b7;
@@ -43,30 +37,23 @@ article div {
   width: 100%;
 }
 
+.h-container{ 
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .a-container{
   display: flex;
-  flex-direction: row;
-  justify-content: right;
-  flex-wrap: wrap;
 }
 
-.p-container{
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-}
-
-p, .p-container{
-  font-size: 14px;
+.a-item{
+  align-content: end;
 }
 
 /* Paragraphs */
 p {
   line-height: 1.5;
-  font-size: 14px;
 }
 
 /* Links */
@@ -86,17 +73,13 @@ nav a {
 img {
   width: 100%;
   max-width: 200px;
-  height: 250px;
-
+  height: auto;
 }
 
 .image-circle {
   border: 2px solid #003049;
-  border-radius: 75%;
-  display: flex;
-  height: auto;
-  width: auto;
-  justify-items: left;
+  border-radius: 50%;
+  align-content: start;
 }
 
 /* Footer */
