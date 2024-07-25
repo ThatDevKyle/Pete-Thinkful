@@ -54,6 +54,8 @@ article div {
 .p-container{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .p-item{
@@ -82,7 +84,7 @@ nav a {
 img {
   width: 100%;
   max-width: 200px;
-  height: fit-content;
+  height: auto;
 }
 
 .image-circle {
