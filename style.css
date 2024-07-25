@@ -51,6 +51,15 @@ article div {
   align-content: end;
 }
 
+.p-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.p-item{
+  justify-content: space-around;
+}
+
 /* Paragraphs */
 p {
   line-height: 1.5;
@@ -73,7 +82,7 @@ nav a {
 img {
   width: 100%;
   max-width: 200px;
-  height: auto;
+  height: fit-content;
 }
 
 .image-circle {
